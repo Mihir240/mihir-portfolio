@@ -25,12 +25,12 @@ export default function Navbar() {
   ];
 
   return (
-    <>
+    <div className=''>
       <nav className="w-full flex py-6 justify-between items-center navbar">
         <div className="sm:hidden flex flex-1 justify-end items-center relative right-2">
 
-             { toggle && <XMarkIcon className="h-6 w-6" aria-hidden="true"  onClick={() => setToggle(false)}/> }
-              { !toggle && <Bars3Icon className="h-6 w-6" aria-hidden="true" onClick={()=> setToggle(true)} /> }
+             { toggle && <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true"  onClick={() => setToggle(false)}/> }
+              { !toggle && <Bars3Icon className="h-6 w-6 text-white" aria-hidden="true" onClick={()=> setToggle(true)} /> }
 
           <div
             className={`${
@@ -46,7 +46,7 @@ export default function Navbar() {
                   }`}
                   onClick={() => setActive(nav.title)}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a className={active === nav.title ? 'text-red-500': 'text-white'} href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>
@@ -61,11 +61,11 @@ export default function Navbar() {
                 className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
                 onClick={() => setActive(nav.title)}
             >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a className={active === nav.title ? 'text-red-500': 'text-white'} href={`#${nav.id}`}>{nav.title}</a>
             </li>
             ))}
         </ul>
       </nav>
-    </>
+    </div>
   );
 }
