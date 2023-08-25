@@ -35,7 +35,7 @@ export default function Resume({ resumeRef }) {
           </div>
           <div className="flex flex-col text-left gap-2">
             <h1 className="sm:text-3xl text-xl font-medium">
-              Applicaton Consulting Group
+              Application Consulting Group
             </h1>
             <div className="flex gap-12 items-center">
               <span className="sm:text-lg text-sm">Consulting Intern</span>{" "}
