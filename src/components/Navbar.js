@@ -66,6 +66,7 @@ export default function Navbar({ homeRef, aboutRef, resumeRef }) {
     return isIntersecting;
   }
 
+  const isHomeRefInView = useIsInViewport(homeRef);
   const isAboutRefInView = useIsInViewport(aboutRef);
   const isResumeRefInView = useIsInViewport(resumeRef);
 
@@ -78,10 +79,10 @@ export default function Navbar({ homeRef, aboutRef, resumeRef }) {
       setActive("About");
     } else if (isResumeRefInView) {
       setActive("Resume");
-    } else {
+    } else if(isHomeRefInView) {
       setActive("Home");
     }
-  }, [isAboutRefInView, isResumeRefInView]);
+  }, [isAboutRefInView, isResumeRefInView, isHomeRefInView]);
 
   return (
     <div className={`sticky top-0 z-50 ${backgroundStyle}`}>
