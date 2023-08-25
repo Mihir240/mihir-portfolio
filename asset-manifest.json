@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/mihir-portfolio/static/css/main.d3ccbc38.css",
-    "main.js": "/mihir-portfolio/static/js/main.d9eb5e15.js",
+    "main.js": "/mihir-portfolio/static/js/main.809a3db6.js",
     "static/js/787.b65f0fbb.chunk.js": "/mihir-portfolio/static/js/787.b65f0fbb.chunk.js",
     "static/media/mihir-cropped.png": "/mihir-portfolio/static/media/mihir-cropped.6f8dc9a34509279fdcd8.png",
     "static/media/header-background.jpg": "/mihir-portfolio/static/media/header-background.60a1d768614a2bdc6a69.jpg",
     "index.html": "/mihir-portfolio/index.html",
     "main.d3ccbc38.css.map": "/mihir-portfolio/static/css/main.d3ccbc38.css.map",
-    "main.d9eb5e15.js.map": "/mihir-portfolio/static/js/main.d9eb5e15.js.map",
+    "main.809a3db6.js.map": "/mihir-portfolio/static/js/main.809a3db6.js.map",
     "787.b65f0fbb.chunk.js.map": "/mihir-portfolio/static/js/787.b65f0fbb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3ccbc38.css",
-    "static/js/main.d9eb5e15.js"
+    "static/js/main.809a3db6.js"
   ]
 }
